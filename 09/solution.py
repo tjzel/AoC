@@ -8,12 +8,8 @@ class Knot:
     def follow(self, head):
         displacement = [head.position[0]-self.position[0], head.position[1]-self.position[1]]
         while abs(displacement[0])>1 or abs(displacement[1])>1 :
-            if abs(displacement[0]) > 0:
-                if abs(displacement[1]) > 0:
-                    self.position[1] += numpy.sign(displacement[1])
-                self.position[0] += numpy.sign(displacement[0])
-            else:
-                self.position[1] += numpy.sign(displacement[1])
+            self.position[0] += numpy.sign(displacement[0])
+            self.position[1] += numpy.sign(displacement[1])
             displacement = [head.position[0]-self.position[0], head.position[1]-self.position[1]]
             self.visitedPoints.add((self.position[0], self.position[1]))
 
