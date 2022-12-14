@@ -49,21 +49,6 @@ class Polyline:
 
 
 class Cave:
-    # def __init__(self, polylineList, width, height, sandOrigin):
-    #     self.width = width + 3
-    #     self.height = height + 2
-    #     self.sandX = sandOrigin[0]
-    #     self.sandY = sandOrigin[1]
-    #     self.places = [[] for i in range (self.height)]
-    #     for i in range (self.height):
-    #         for j in range (self.width):
-    #             self.places[i].append(0)
-    #     self.places[self.sandY][self.sandX] = 2
-    #     for i in range (self.width):
-    #         self.places[self.height-1][i] = 4
-    #     for p in polylineList:
-    #         p.fillCave(self)
-
     def __init__(self, width, height, sandOrigin):
         self.width = width + 3
         self.height = height + 3
